@@ -101,3 +101,6 @@ validators==0.18.2
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
+
+# Note: For Zara scraper functionality, also install:
+# pip install -r requirements_scraper.txt
