@@ -40,6 +40,18 @@ SUPABASE_KEY=your_service_role_key_here
 
 ## Usage
 
+### Quick Start
+
+The fastest way to get started:
+
+```bash
+# Run setup (installs dependencies and sets up environment)
+python setup_scraper.py
+
+# Quick scrape (one command to scrape and save)
+python quick_scrape.py
+```
+
 ### Run Locally
 
 ```bash
@@ -50,6 +62,29 @@ python zara_scraper.py
 
 ```bash
 python test_scraper.py
+# or
+python validate_scraper.py
+```
+
+### Utility Commands
+
+Use the `scraper_utils.py` script for various management tasks:
+
+```bash
+# Show database statistics
+python scraper_utils.py stats
+
+# Export products to JSON
+python scraper_utils.py export --filename my_products.json
+
+# Test database connection
+python scraper_utils.py test
+
+# Run scraping with custom URL
+python scraper_utils.py scrape --url "https://www.zara.com/tn/fr/femme-tout-l1055.html"
+
+# Clear old products (demonstration - not fully implemented)
+python scraper_utils.py clear-old --days 30
 ```
 
 ### GitHub Actions

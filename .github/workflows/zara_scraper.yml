@@ -1,6 +1,6 @@
 name: Daily Zara Scraper
 
-on:
+"on":
   # Run daily at 9:00 AM UTC
   schedule:
     - cron: '0 9 * * *'

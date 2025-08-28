@@ -18,6 +18,13 @@ TODO: document this better (will likely do a big refactor once the data engine f
 * `save_to_gsheets.py` - Small utility script that saves a bunch of metadata about an uploaded image to a Google Sheet (this will likely move into a dedicated `utils/` folder later on.
 * `utils.py` - Series of helper functions used in `food_image_collector.py`, for example, `upload_blod()`, a function that uploads a photo to Google Storage.
 * `zara_scraper.py` - Playwright-based web scraper for Zara products with Supabase integration and daily GitHub Actions automation.
+* `scraper_utils.py` - Command-line utilities for managing the scraper (stats, export, testing, etc.).
+* `setup_scraper.py` - Automated setup script for first-time installation and configuration.
+* `quick_scrape.py` - One-command script to quickly run the scraper.
+* `validate_scraper.py` - Validation tests for the scraper functionality.
+* `test_scraper.py` - Comprehensive test script for the scraper.
+* `database_schema.sql` - SQL schema for the Supabase database.
+* `.env.example` - Template for environment variables.
 * `requirements.txt` - A text file with the dependency requirements for this project.
 
 ### Zara Product Scraper
