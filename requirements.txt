@@ -101,3 +101,6 @@ validators==0.18.2
 wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
+playwright==1.45.0
+supabase==2.4.4
+python-dotenv==1.0.1
