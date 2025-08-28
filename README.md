@@ -17,7 +17,17 @@ TODO: document this better (will likely do a big refactor once the data engine f
 * `food_image_collector.py` - Streamlit-powered app that collects photos and uploads them to a Google Storage bucket and stores metadata in Google Sheets (these are private), see the workflow below.
 * `save_to_gsheets.py` - Small utility script that saves a bunch of metadata about an uploaded image to a Google Sheet (this will likely move into a dedicated `utils/` folder later on.
 * `utils.py` - Series of helper functions used in `food_image_collector.py`, for example, `upload_blod()`, a function that uploads a photo to Google Storage.
+* `zara_scraper.py` - Playwright-based web scraper for Zara products with Supabase integration and daily GitHub Actions automation.
 * `requirements.txt` - A text file with the dependency requirements for this project.
+
+### Zara Product Scraper
+
+A new addition to the project - a web scraper that collects product data from Zara's website:
+- Uses Playwright to handle JavaScript-heavy pages
+- Stores data in Supabase PostgreSQL database  
+- Handles product updates automatically
+- Runs daily via GitHub Actions
+- See `ZARA_SCRAPER_README.md` for detailed documentation
 
 
 
